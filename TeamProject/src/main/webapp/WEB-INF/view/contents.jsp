@@ -1,14 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>게시물 내용</title>
-<link href="/TeamProject/css/contents.css" rel="stylesheet"
-	type="text/css">
-</head>
-<body>
+
+<%@ include file="/WEB-INF/view/common/begin.jspf" %>
+<link href="${contextPath}/css/contents.css" rel="stylesheet" type="text/css">
+
 	<article>
 		<!-- 개시물 내용 섹션 -->
 		<section id="contents">
@@ -41,5 +36,5 @@
 			</ul>
 		</section>
 	</article>
-</body>
-</html>
+	
+<%@ include file="/WEB-INF/view/common/end.jspf" %>
