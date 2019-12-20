@@ -6,37 +6,6 @@
 <meta charset="UTF-8">
 <title>게시물 내용</title>
 <link href="/TeamProject/css/contents.css" rel="stylesheet" type="text/css">
-<style>
-article {
-	width: 800px;
-	margin: auto;
-}
-
-h3 {
-	padding: 10px;
-}
-ul {
-	list-style:none;
-}
-section p {
-	padding: 5px;
-}
-
-article section:nth-child(1) {
-	background-color: rgb(177, 202, 230);
-}
-
-article section:nth-child(2) {
-	background-color: rgb(177, 230, 218);
-}
-article section:nth-child(2) p {
-	float:left;
-}
-
-section:first-child p:nth-child(2) {
-	height: 300px;
-}
-</style>
 </head>
 <body>
 	<article>
