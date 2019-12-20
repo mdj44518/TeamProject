@@ -28,25 +28,25 @@ public class HelloController {
 	public String boardInsert(BoardDTO dto,Model model) throws Exception {
 		dao.insert(dto);
 		//create  DB 연동 후 뷰페이지로 넘기기
-		return "?????";
+		return "board";
 	}
 	
 	@GetMapping(value = "/board-read")
 	public String boardRead(Model model,@RequestParam("boardId")int boardId) throws Exception {
 		dao.read(boardId);
 		//read  DB 연동 후 뷰페이지로 넘기기
-		return "?????";
+		return "board";
 	}
 	
-	@GetMapping(value = "/board-update")
-	public String boardUpdate(BoardDTO dto, Model model) throws Exception {
-		dao.update(dto);
-		return "?????";
+	@GetMapping("board-update")
+	public String boardUpdate() {
+		//update  DB 연동 후 뷰페이지로 넘기기
+		return "board";
 	}
 	
-	@GetMapping(value = "/board-delete")
-	public String boarDelete(@RequestParam("boardId")int boardId, Model model) throws Exception {
-		dao.delete(boardId);
-		return "?????";
+	@GetMapping("board-delete")
+	public String boarDelete() {
+		//delete  DB 연동 후 뷰페이지로 넘기기
+		return "board";
 	}
 }
