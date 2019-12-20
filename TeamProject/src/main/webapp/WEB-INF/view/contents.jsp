@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>게시물 내용</title>
-<link href="/TeamProject/css/contents.css" rel="stylesheet" type="text/css">
+<link href="/TeamProject/css/contents.css" rel="stylesheet"
+	type="text/css">
 </head>
 <body>
 	<article>
@@ -24,6 +25,17 @@
 				<li>
 					<p>작성자</p>
 					<p>작성일</p>
+				</li>
+				<li>
+					<p>댓글내용</p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<p>작성자1</p>
+					<p>작성일1</p>
+				</li>
+				<li>
 					<p>댓글내용</p>
 				</li>
 			</ul>

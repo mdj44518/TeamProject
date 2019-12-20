@@ -8,8 +8,12 @@ article {
 h3 {
 	padding: 10px;
 }
+
 ul {
-	list-style:none;
+	margin: 0;
+	list-style: none;
+	height: 40px;
+	padding:0;
 }
 section p {
 	padding: 5px;
@@ -21,9 +25,12 @@ article section:nth-child(1) {
 
 article section:nth-child(2) {
 	background-color: rgb(177, 230, 218);
+/* 	overflow: hidden; */
 }
-article section:nth-child(2) p {
-	float:left;
+
+article section:nth-child(2) p:first-child {
+/* 	float: left; */
+	margin: auto;
 }
 
 section:first-child p:nth-child(2) {
