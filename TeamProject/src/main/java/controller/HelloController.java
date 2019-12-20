@@ -16,30 +16,30 @@ public class HelloController {
 	public String hello(Model model,
 			@RequestParam(value = "name", required = false) String name) {
 		model.addAttribute("greeting", "안녕하세요, " + name);
-		return "contents";
+		return "board";
 	}
 	
 	@PostMapping("board")
 	public String boardInsert() {
 		//create  DB 연동 후 뷰페이지로 넘기기
-		return "?????";
+		return "board";
 	}
 	
 	@GetMapping("board")
 	public String boardRead() {
 		//read  DB 연동 후 뷰페이지로 넘기기
-		return "?????";
+		return "board";
 	}
 	
 	@GetMapping("board-update")
 	public String boardUpdate() {
 		//update  DB 연동 후 뷰페이지로 넘기기
-		return "?????";
+		return "board";
 	}
 	
 	@GetMapping("board-delete")
 	public String boarDelete() {
 		//delete  DB 연동 후 뷰페이지로 넘기기
-		return "?????";
+		return "board";
 	}
 }

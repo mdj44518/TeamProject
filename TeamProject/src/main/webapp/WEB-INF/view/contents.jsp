@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>게시물 내용</title>
+<link href="/TeamProject/css/contents.css" rel="stylesheet" type="text/css">
 <style>
 article {
 	width: 1200px;
