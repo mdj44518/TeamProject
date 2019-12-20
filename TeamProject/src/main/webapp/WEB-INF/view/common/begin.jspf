@@ -11,3 +11,13 @@
 </head>
 <body>
 <div id="wrap">
+<header>
+	<h1>팀 홈페이지</h1>
+</header>
+<nav>
+	<ul>
+		<li>메뉴1</li>
+		<li>메뉴2</li>
+		<li>메뉴3</li>
+	</ul>
+</nav>
