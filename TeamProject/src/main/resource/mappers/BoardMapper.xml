@@ -7,12 +7,15 @@
 select * from board where boardId = #{boardId};
 </select>
 <insert id="insertBoard">
-insert into board(userid, boardTitle, boardContent) values(#{userid},#{boardTitle},#{boardContent});
+insert into board(userId, boardTitle, boardContent, boardDate) values(#{userId},#{boardTitle},#{boardContent},#{boardDate});
 </insert>
 <update id="updateBoard">
-update board set userid = #{userid}, boardTitle = #{boardTitle}, boardContent = #{boardContent} where boardId = #{boardID};
+update board set userId = #{userId}, boardTitle = #{boardTitle}, boardContent = #{boardContent}, boardDate = #{boardDate} where boardId = #{boardId};
 </update>
 <delete id="deleteBoard">
 delete from board where boardId=#{boardId};
 </delete>
+<select id="allBoard" resultType="model.BoardDTO">
+select * from board where boardId > 0;
+</select>
 </mapper>
