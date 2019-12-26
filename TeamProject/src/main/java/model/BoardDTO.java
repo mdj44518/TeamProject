@@ -1,5 +1,7 @@
 package model;
 
+import java.sql.Date;
+
 public class BoardDTO {
 	
 	private int boardId;			//게시물번호

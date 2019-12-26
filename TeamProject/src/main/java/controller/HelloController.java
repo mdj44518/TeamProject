@@ -33,7 +33,7 @@ public class HelloController {
 	
 	@GetMapping(value = "/board-read")
 	public String boardRead(Model model,@RequestParam("boardId")int boardId) throws Exception {
-		dao.read(boardId);
+		model.addAttribute("add", dao.read(boardId));
 		//read  DB 연동 후 뷰페이지로 넘기기
 		return "board";
 	}

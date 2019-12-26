@@ -8,22 +8,17 @@
 				<th>번호</th>
 				<th>제목</th>
 				<th>작성자</th>
+				<th>내용</th>
 				<th>작성일</th>
 				<th>조회수</th>
 			</tr>
 			<tr>
-				<td>1</td>
-				<td><a href="#">안녕</a></td>
-				<td>dd0101</td>
-				<td>2020-01-01</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td><a href="#">안녕안녕하세요</a></td>
-				<td>dyg9927</td>
-				<td>2020-01-01</td>
-				<td>2</td>
+				<td>${add.boardId }</td>
+				<td><a href="#">${add.boardTitle }</a></td>
+				<td>${add.userId }</td>
+				<td>${add.boardContent }</td>
+				<td>${add.boardDate }</td>
+				<td>${add.boardViews }</td>
 			</tr>
 		</table>
 	</section>

@@ -25,6 +25,7 @@
 			<param-value>
 				config.MvcConfig
 				config.ControllerConfig
+				config.BeanCon
 			</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
