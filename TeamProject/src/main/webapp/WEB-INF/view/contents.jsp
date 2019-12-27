@@ -17,22 +17,34 @@
 		
 		<!-- 댓글 섹션 -->
 		<section>
-			<ul>
-				<li>
-					<p>작성자</p>
-				</li>
-				<li>
-					<p>댓글내용</p>
-				</li>
-			</ul>
-			<!-- <ul>
-				<li>
-					<p>작성자1</p>
-				</li>
-				<li>
-					<p>댓글내용</p>
-				</li>
-			</ul> -->
+			<form action="/TeamProject/hello/board-reply" method="post">
+				<table>
+					<tr>
+						<td>작성자</td>
+						<td><input type="text" name="replyName" id="replyName">
+					</tr>
+					<tr>
+						<td>댓글</td>
+						<td><input type="text" name="replyContent" id="replyContent">
+					</tr>
+					<tr>
+						<td colspan = "2">
+						<input type="submit" name="submit" id="submit" value="댓글 등록">
+					</tr>
+				</table>
+			</form>
+				<table>
+					<c:forEach items="${reply }" var="reply">
+						<tr>
+							<th>작성자</th>
+							<th>${reply.replyName }</th>
+						</tr>
+						<tr>
+							<th>댓글</th>
+							<th>${reply.replyContent }</th>
+						</tr>
+					</c:forEach>
+				</table>
 		</section>
 	</article>
 	

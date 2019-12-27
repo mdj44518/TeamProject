@@ -18,4 +18,19 @@ delete from board where boardId=#{boardId};
 <select id="allBoard" resultType="model.BoardDTO">
 select * from board where boardId > 0;
 </select>
+<select id="listPage" resultType="model.BoardDTO">
+select * from board where boardId > 0 limit #{page},10;
+</select>
+<select id="allBoardPage" resultType="model.BoardDTO">
+select * from board where boardId > 0 limit #{pageStart}, #{pageNum};
+</select>
+<select id="totalBoard" resultType="Integer">
+select count(*) from board;
+</select>
+<insert id="replyCreate">
+insert into reply(replyName,replyContent) values (#{replyName},#{replyContent});
+</insert>
+<select id="replyList" resultType="model.BoardDTO">
+select * from reply;
+</select>
 </mapper>

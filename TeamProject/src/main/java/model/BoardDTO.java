@@ -9,6 +9,22 @@ public class BoardDTO {
 	private String boardDate;		//작성일
 	private int boardViews;			//조회수
 	
+	private String replyName;
+	private String replyContent;
+	
+	
+	public String getReplyName() {
+		return replyName;
+	}
+	public void setReplyName(String replyName) {
+		this.replyName = replyName;
+	}
+	public String getReplyContent() {
+		return replyContent;
+	}
+	public void setReplyContent(String replyContent) {
+		this.replyContent = replyContent;
+	}
 	public int getBoardId() {
 		return boardId;
 	}

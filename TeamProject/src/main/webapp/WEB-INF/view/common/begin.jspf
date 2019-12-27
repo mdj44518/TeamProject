@@ -16,7 +16,7 @@
 </header>
 <nav>
 	<ul>
-		<li><a href="/TeamProject/hello/allList">리스트</a></li>
+		<li><a href="/TeamProject/hello/board-allPage">리스트</a></li>
 		<li><a href="/TeamProject/hello/board-insert">가입하기</a></li>
 		<li>메뉴3</li>
 	</ul>
